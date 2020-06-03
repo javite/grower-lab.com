@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
-$userName = "root"; //grower
-$password = ""; //Grower-lab01
-$dbName = "contact";
+$userName = "growerla"; //grower
+$password = "Grower-lab01"; //Grower-lab01
+$dbName = "grower-lab.com";
 // Create database connection
 $conn = new mysqli($host, $userName, $password, $dbName);
 // Check connection

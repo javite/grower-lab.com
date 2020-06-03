@@ -2,7 +2,7 @@
 $host = "localhost";
 $userName = "growerla"; //grower
 $password = "Grower-lab01"; //Grower-lab01
-$dbName = "grower-lab.com";
+$dbName = "growerlab.com";
 // Create database connection
 $conn = new mysqli($host, $userName, $password, $dbName);
 // Check connection

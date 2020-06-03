@@ -8,12 +8,12 @@ if((isset($_POST['name'])&& $_POST['name'] !='') && (isset($_POST['email'])&& $_
     $comments = $conn->real_escape_string($_POST['message']);
     $sql="INSERT INTO contact (name, email, subject, message) VALUES ('".$yourName."','".$yourEmail."', '".$yourPhone."', '".$comments."')";
     if(!$result = $conn->query($sql)){
-        die('There was an error running the query [' . $conn->error . ']');
+        die('Hubo un problema con la base de datos [' . $conn->error . ']');
     } else {
         echo "OK";
     }
 } else {
-    echo "Please fill Name and Email";
+    echo "Por favor complete el Nombre y Email";
 }
 
 
